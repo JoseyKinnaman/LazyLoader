@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A very simple React website that displays a lazy loading effect without a lazy loading library.
 
+[Visit Deployed Site](https://mystifying-saha-951626.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
