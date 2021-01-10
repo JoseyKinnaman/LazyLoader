@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import LazyLoad from './LazyLoad.jsx';
+import fullsize from '../assests/fullsize.jpg';
+import thumb from '../assests/thumb.jpg';
 
-function App() {
+const altText = "legs with Nike shoes"
+
+const App = () => {
   return (
     <div className="App">
-      <LazyLoad />
+      <LazyLoad
+        src={fullsize}
+        placeholder={thumb}
+        alt={altText}
+      />
     </div>
   );
 }
