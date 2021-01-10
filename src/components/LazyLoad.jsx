@@ -15,7 +15,14 @@ const LazyLoad = ({src, placeholder, alt}) => {
   }, [src])
   return(
     <div className="">
-      <img src={src} alt={alt}/>
+      <img
+        src={img}
+        alt={alt}
+        style={{
+          opacity: loading? 0.5 : 1,
+          transition: "opacity 0.15s linear"
+        }}
+        />
     </div>
   )
 }
