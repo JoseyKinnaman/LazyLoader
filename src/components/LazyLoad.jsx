@@ -16,14 +16,16 @@ const LazyLoad = ({src, placeholder, alt}) => {
 
   return(
     <div className="wrapper">
-      <img
-        src={img}
-        alt={alt}
-        style={{
-          opacity: loading? 0.5 : 1,
-          transition: "opacity 5s linear"
-        }}
+      <a href="https://www.pexels.com/@sanaan">
+        <img
+          src={img}
+          alt={alt}
+          style={{
+            opacity: loading? 0.5 : 1,
+            transition: "opacity 5s linear"
+          }}
         />
+      </a>
     </div>
   )
 }
