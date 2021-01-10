@@ -6,12 +6,8 @@ const LazyLoad = ({src, placeholder, alt}) => {
   const [img, setImg] = useState(placeholder);
 
   useEffect(() => {
-    const lazyImage = new Image();
-    lazyImage.src = src;
-    lazyImage.onload = () => {
       setLoading(false);
       setImg(src);
-    }
   }, [src])
 
   return(
